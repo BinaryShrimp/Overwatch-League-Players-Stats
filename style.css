@@ -36,3 +36,43 @@ header button:hover {
     border-bottom: 3px solid #F5A52D;
     transform: scale(1.1);
 }
+
+/* MAIN */
+
+/* form section */
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.search-box {
+    width: 40%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #D9C1C1;
+    padding: 0 20px 0 20px;
+}
+@media only screen and (max-width: 800px) {
+    .search-box {
+        width: 80%;
+    }
+}
+.search-button {
+    margin: 25px;
+    width: 90px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: #F5A52D;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.search-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px lightgray;
+}
