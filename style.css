@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: #222D49;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-buttons {
+    display: flex;
+    justify-content: center;
+}
+header button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 24px;
+    margin: 15px;
+    transition: 0.2s ease;
+}
+header button:hover {
+    border-bottom: 3px solid #F5A52D;
+    transform: scale(1.1);
+}
+
+.header-button-selected {
+    border-bottom: 3px solid #F5A52D;
+    transform: scale(1.1);
+}
