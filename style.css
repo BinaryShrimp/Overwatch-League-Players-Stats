@@ -37,6 +37,11 @@ header button:hover {
     transform: scale(1.1);
 }
 
+
+
+
+
+
 /* MAIN */
 
 /* form section */
@@ -55,14 +60,14 @@ header button:hover {
     border: 2px solid #D9C1C1;
     padding: 0 20px 0 20px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 720px) {
     .search-box {
         width: 80%;
     }
 }
 .search-button {
     margin: 25px;
-    width: 90px;
+    width: 120px;
     height: 50px;
     border: none;
     border-radius: 5px;
@@ -75,4 +80,77 @@ header button:hover {
 .search-button:hover {
     transform: scale(1.02);
     box-shadow: 0 0 10px lightgray;
+}
+
+
+
+/* player card container */
+.player-card-container {
+    margin: 0 auto;
+    width: 60%;
+    background: #FAF3F3;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 350px;
+    height: 450px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    transition: 0.2s ease;
+}
+.player-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px lightgray;
+}
+@media only screen and (max-width: 720px) {
+    .player-card-container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+.player-name {
+    margin: 10px 0 10px 0;
+}
+
+.statsP {
+    margin: 0;
+}
+.stats-button {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background: #F5A52D;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.stats-button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px lightgray;
+}
+
+.player-info {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player-teams {
+    display: flex;
+    align-content: center;
 }
