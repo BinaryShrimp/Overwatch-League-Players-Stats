@@ -142,6 +142,10 @@ header button:hover {
     transform: scale(1.02);
     box-shadow: 0 0 10px lightgray;
 }
+.stats-button a {
+    text-decoration: none;
+    color: white;
+}
 
 .player-info {
     margin: 20px;
