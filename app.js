@@ -19,7 +19,7 @@ function writePlayerCard(playerStats, playerData) {
         <p class="statsP">Eliminations: ${Math.round(playerStats.eliminations_avg_per_10m)} (per 10min)</p>
         <p class="statsP">Final Blows: ${Math.round(playerStats.final_blows_avg_per_10m)} (per 10min)</p>
         <p class="statsP">Deaths: ${Math.round(playerStats.deaths_avg_per_10m)} (per 10min)</p>
-        <button class="stats-button"><a target='_blank' href="${`https://overwatchleague.com/en-us/players/${playerStats.playerId}`}">More Stats</a></button>
+        <a target='_blank' href="${`https://overwatchleague.com/en-us/players/${playerStats.playerId}`}"><button class="stats-button">More Stats</button></a>
     `
 }
 
