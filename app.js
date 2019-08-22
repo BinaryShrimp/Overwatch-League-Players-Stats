@@ -1,3 +1,11 @@
+function writePlayerNotFound() {
+    document.querySelector('.player-titles').innerHTML = '';
+    document.querySelector('.player-teams').innerHTML = '';
+    return `
+    <h4 style="padding: 20px">Player not found. Please check spelling</h4>
+    `
+}
+
 function writePlayerTeam(playerData) {
     return `
     <img src="${playerData.data.player.teams[0].team.logo}" alt="picture of team" width="100px;" style="padding: 10px">
@@ -42,6 +50,9 @@ function getPlayerId(playerData, playerName) {
             let playerStats = playerData.data[i];
             getPlayerData(playerId, playerStats);
             break;
+        }
+        else if(i == (playerData.data.length - 1)) {
+            document.querySelector('.player-card').innerHTML = writePlayerNotFound();
         }
     }
 }
