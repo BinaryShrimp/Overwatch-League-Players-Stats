@@ -7,6 +7,17 @@ body {
     margin: 0;
 }
 
+
+.hide {
+    display: none;
+}
+
+
+.landing-page {
+    text-align: center;
+    margin-top: 150px;
+}
+
 /* HEADER */
 header {
     background: #222D49;
@@ -32,7 +43,7 @@ header button:hover {
     transform: scale(1.1);
 }
 
-.header-button-selected {
+.selected {
     border-bottom: 3px solid #F5A52D;
     transform: scale(1.1);
 }
