@@ -1,3 +1,27 @@
+function printAllPlayer(data) {
+    let cardContainer = document.querySelector('.all-player-container');
+    data.map(item => {
+        cardContainer.innerHTML += `
+        <div class="player-card">
+            <div class="team-logo">
+                <img src="${item.teams[0].team.logo}" alt="" width="30px" style="margin: 5px;">
+            </div>
+            <img src="${item.headshot}" alt="" width="200px">
+            <h4 class="player-name">${item.name}</h4>
+            <h4 class="player-name">${item.teams[0].team.name}</h4>
+            <a target='_blank' href="${`https://overwatchleague.com/en-us/players/${item.id}`}"><button class="stats-button">More Stats</button></a>
+        </div>
+        `
+    });
+}
+
+async function showAllPlayers() {
+    let showplayersAPI = 'https://api.overwatchleague.com/players';
+    let request = await fetch(showplayersAPI);
+    let data = await request.json();
+    printAllPlayer(data.content);
+}
+
 function writePlayerNotFound() {
     document.querySelector('.player-titles').innerHTML = '';
     document.querySelector('.player-teams').innerHTML = '';
@@ -78,3 +102,4 @@ function watchForm() {
 
 
 watchForm();
+// showAllPlayers();

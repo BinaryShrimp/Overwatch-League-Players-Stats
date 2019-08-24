@@ -169,3 +169,24 @@ header button:hover {
     display: flex;
     align-content: center;
 }
+
+
+
+
+
+
+
+
+/* ALL PLAYER SECTION */
+.all-player-container {
+    margin: 50px auto;
+    /* border: 1px solid black; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-logo {
+    width: 100%;
+}
