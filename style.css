@@ -137,8 +137,11 @@ header button:hover {
 .statsP {
     margin: 0;
 }
-.stats-button {
+
+.player-card a {
     margin-bottom: 20px;
+}
+.stats-button {
     width: 100px;
     height: 45px;
     border: none;

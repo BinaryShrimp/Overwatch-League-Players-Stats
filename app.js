@@ -1,5 +1,6 @@
 function printAllPlayer(data) {
     let cardContainer = document.querySelector('.all-player-container');
+    cardContainer.innerHTML = '';
     data.map(item => {
         cardContainer.innerHTML += `
         <div class="player-card">
@@ -102,4 +103,4 @@ function watchForm() {
 
 
 watchForm();
-// showAllPlayers();
+showAllPlayers();
